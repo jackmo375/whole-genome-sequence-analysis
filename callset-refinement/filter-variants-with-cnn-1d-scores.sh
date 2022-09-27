@@ -6,7 +6,7 @@ vcf="${project}/working-data/NA18486.cnn-1d.vcf.gz"
 snpDatabases="${project}reference-data/gatk-resource-bundle/1000G_phase1.snps.high_confidence.hg38.vcf.gz"
 indelDatabases="${project}reference-data/gatk-resource-bundle/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz"
 
-gatk FilterVariantTranches \
+$gatk FilterVariantTranches \
     -V ${vcf} \
     --resource ${snpDatabases} \
     --resource ${indelDatabases} \
